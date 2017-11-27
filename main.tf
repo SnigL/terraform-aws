@@ -16,7 +16,7 @@ resource "aws_instance" "example" {
 
 # Default security group to access the instances via SSH
 resource "aws_security_group" "default" {
-  name        = "terraform_example"
+  name        = "ubuntu_example"
   description = "Used in the terraform"
 
   # SSH access from anywhere
