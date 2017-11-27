@@ -7,14 +7,14 @@ resource "aws_instance" "example" {
   instance_type = "t2.micro"
   key_name = "centOS"
 
-  # Our Security group to allow RDP access
+  # Our Security group to allow SSH access
   security_groups = ["${aws_security_group.default.name}"]
 
     tags {
     Name = "terraform-example"
   }
 
-# Default security group to access the instances via RDP
+# Default security group to access the instances via SSH
 resource "aws_security_group" "default" {
   name        = "terraform_example"
   description = "Used in the terraform"
