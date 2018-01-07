@@ -3,9 +3,9 @@ provider "aws" {
 }
 
 resource "aws_instance" "example" {
-  ami = "ami-8fd760f6"
-  instance_type = "t2.micro"
-  key_name = "centOS"
+  ami = "${var.ami_id}"
+  instance_type = "${var.instance_type}"
+  key_name = "${var.key_name}"
 
   # Our Security group to allow SSH access
   security_groups = ["${aws_security_group.default.name}"]
