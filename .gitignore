@@ -1,11 +1,4 @@
-
-.terraform/plugins/darwin_amd64/lock.json
-
-.terraform/plugins/darwin_amd64/terraform-provider-aws_v1.3.1_x4
-
-*.pem
-
 terraform.tfstate.backup
-
+.terraform/
 terraform.tfstate
 .DS_Store
