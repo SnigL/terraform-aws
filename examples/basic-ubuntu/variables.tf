@@ -13,6 +13,7 @@ variable "instance_type" {
 }
 
 variable "ami_id" {
-  default = "ami-8fd760f6"
+  default = "ami-4d46d534"
+  //default = "ami-8fd760f6"
   description = "Id of AMI"
 }
